@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Journal App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Journal</h1>
+
+        <section class="note-form-section">
+            <h2>Add New Entry</h2>
+            <form id="note-form">
+                <div class="form-group">
+                    <label for="note-title">Title:</label>
+                    <input type="text" id="note-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="note-content">Content:</label>
+                    <textarea id="note-content" rows="5" required></textarea>
+                </div>
+                <button type="submit">Add Note</button>
+            </form>
+        </section>
+
+        <section class="filter-section">
+            <h2>Filter Notes</h2>
+            <div class="form-group">
+                <label for="filter-keyword">Filter by Keyword:</label>
+                <input type="text" id="filter-keyword" placeholder="Enter keyword...">
+            </div>
+            <div class="form-group">
+                <label for="filter-date">Filter by Date:</label>
+                <input type="date" id="filter-date">
+            </div>
+            <button id="clear-filters">Clear Filters</button>
+        </section>
+
+        <section class="note-list-section">
+            <h2>Your Entries</h2>
+            <div id="notes-list">
+                <p class="no-notes-message">No journal entries yet. Add one above!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
